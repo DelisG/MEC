@@ -1,0 +1,112 @@
+a{
+  text-decoration: none;
+}
+
+.bg-orange{
+  background-color: rgb(255, 102, 0);
+  color: aliceblue;
+}
+.bg-orange:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 102, 0);
+  margin-bottom: 5px;
+  transition: all .5s;
+  box-shadow: 0 4px 0 rgb(255, 102, 0);
+  border-radius: 2px;
+  border-color: rgb(255, 102, 0);
+}
+
+.text-orange{
+  color: orange;
+}
+
+.cta-button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: rgb(255, 102, 0); 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s;
+}
+
+.cta-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(230, 213, 142, 0.308); 
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: pulsar 1s infinite; 
+}
+
+@keyframes pulsar {
+  0% {
+      transform: translate(-50%, -50%) scale(0); 
+      opacity: 1;
+  }
+  50% {
+      transform: translate(-50%, -50%) scale(1); 
+      opacity: 0.1;
+  }
+  100% {
+      transform: translate(-50%, -50%) scale(0); 
+      opacity: 1;
+  }
+}
+
+.cta-button:hover {
+  background-color: #e66f00;
+  color: aliceblue;
+}
+
+@media (max-width: 768px) {
+  * {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  p, button{
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+}
+
+/* carrossel */
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.item-description {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.item-description h5 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.item-description p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.item-description .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6c757d; /
+}
