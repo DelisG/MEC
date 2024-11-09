@@ -87,33 +87,6 @@ a {
 
 /* carrossel */
 
-.carousel-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.item-description {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.item-description h5 {
-  font-size: 1.2rem;
-  color: #333;
-}
-
-.item-description p {
-  font-size: 1rem;
-  color: #666;
-}
-
-.item-description .price {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #6c757d;/
-}
-
 @media (max-width: 767px) {
   .carousel-item .col-12 {
     flex: 0 0 50%;
@@ -124,4 +97,11 @@ a {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: invert(1);
+}
+
+.card {
+  height: 100%; /* Faz com que todos os cards ocupem o mesmo espaço vertical */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Distribui o conteúdo dentro do card */
 }
