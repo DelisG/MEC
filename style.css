@@ -2,16 +2,34 @@ a {
   text-decoration: none;
 }
 
+.stripped {
+  background: 
+    /* Degradê horizontal dourado */
+    linear-gradient(to right, #df9307, #f1dfbc,#f1dfbc, #df9307),
+    
+    /* Listras verticais sólidas */
+    linear-gradient(to right, #8e4fb3d0 25%, #ec1515 25%, #64eb16 25%);
+  
+  /* A ordem das camadas é importante, para que a primeira camada de fundo dourada fique abaixo das listras */
+  background-size: 100% 25%, 100% 20%;  /* Ajuste a altura das listras */
+  background-repeat: no-repeat;  /* Garante que o fundo não se repita */
+}
+
+
+.bgwhite{
+  background-color: #fff;
+}
+
 .bg-dourado {
-  color: rgb(233, 183, 1);
+  color: #df9307;
   border: 1px solid rgb(240, 240, 234);
 }
 
 .bg-dourado:hover {
-  color: rgb(233, 183, 1);
+  color: #df9307;
   transition: all .6s;
   border-radius: 1px;
-  border: 1px solid rgb(233, 183, 1);
+  border: 1px solid #df9307;
 }
 
 
@@ -36,7 +54,7 @@ a {
 }
 
 .cta-button:hover {
-  border: 3px solid rgb(233, 183, 1);
+  border: 3px solid #df9307;
   color: rgb(243, 240, 228);
 }
 
@@ -50,7 +68,7 @@ a {
   background-color: rgba(255, 252, 232, 0.2);
   border-radius: 30%;
   transform: translate(-50%, -50%) scale(0);
-  animation: pulsar 1s infinite;
+  animation: pulsar .7s infinite;
 }
 
 @keyframes pulsar {
@@ -99,8 +117,49 @@ a {
 }
 
 .card {
-  height: 100%; /* Faz com que todos os cards ocupem o mesmo espaço vertical */
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Distribui o conteúdo dentro do card */
+  justify-content: center;
+}
+
+/* botão whatsapp */
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-btn:hover {
+  color: white;
+  background-color: #16a84c;
+  transition: all .7s;
+}
+
+.whatsapp-btn.animated {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
