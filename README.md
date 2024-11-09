@@ -1,6 +1,6 @@
 <div style="display: flex; align-items: center; gap: 15px;">
 
-<img src="Logo.png" alt="Logo MEC" style="width: 100px; height: auto;">
+<img src="logo.png" alt="Logo MEC" style="width: 100px; height: auto;">
 
 <div>
     <h3>MEC</h3>
