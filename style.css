@@ -1,4 +1,4 @@
-a{
+a {
   text-decoration: none;
 }
 
@@ -15,7 +15,7 @@ a{
 }
 
 
-.text-dourado{
+.text-dourado {
   color: dourado;
 }
 
@@ -36,8 +36,8 @@ a{
 }
 
 .cta-button:hover {
-  border: 3px solid  rgb(233, 183, 1);
-  color:rgb(243, 240, 228);
+  border: 3px solid rgb(233, 183, 1);
+  color: rgb(243, 240, 228);
 }
 
 .cta-button::after {
@@ -47,24 +47,26 @@ a{
   left: 50%;
   width: 300%;
   height: 300%;
-  background-color: rgba(255, 252, 232, 0.2); 
+  background-color: rgba(255, 252, 232, 0.2);
   border-radius: 30%;
   transform: translate(-50%, -50%) scale(0);
-  animation: pulsar 1s infinite; 
+  animation: pulsar 1s infinite;
 }
 
 @keyframes pulsar {
   0% {
-      transform: translate(-50%, -50%) scale(0); 
-      opacity: 1;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
   }
+
   50% {
-      transform: translate(-50%, -50%) scale(1); 
-      opacity: 0.4;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.4;
   }
+
   100% {
-      transform: translate(-50%, -50%) scale(0); 
-      opacity: 1;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
   }
 }
 
@@ -75,7 +77,9 @@ a{
 }
 
 @media (min-width: 768px) {
-  p, button{
+
+  p,
+  button {
     margin-left: 30px;
     margin-top: 10px;
   }
@@ -107,20 +111,17 @@ a{
 .item-description .price {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #6c757d; /
+  color: #6c757d;/
 }
-/* -------------------- */
 
-    /* Ajuste para 2 cards por linha em telas pequenas */
-    @media (max-width: 767px) {
-        .carousel-item .col-12 {
-            flex: 0 0 50%; /* Cada card ocupa metade da largura */
-            max-width: 50%;
-        }
-    }
+@media (max-width: 767px) {
+  .carousel-item .col-12 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
 
-    /* Estilizar os botões de controle do carrossel */
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        filter: invert(1); /* Tornar os ícones escuros */
-    }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
