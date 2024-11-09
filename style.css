@@ -2,12 +2,12 @@ a{
   text-decoration: none;
 }
 
-.bg-orange {
+.bg-dourado {
   color: rgb(233, 183, 1);
   border: 1px solid transparent;
 }
 
-.bg-orange:hover {
+.bg-dourado:hover {
   color: rgb(233, 183, 1);
   transition: all .5s;
   border-radius: 1px;
@@ -15,8 +15,8 @@ a{
 }
 
 
-.text-orange{
-  color: orange;
+.text-dourado{
+  color: dourado;
 }
 
 .cta-button {
@@ -25,15 +25,19 @@ a{
   padding: 15px 30px;
   background-color: rgb(216, 167, 6);
   color: white;
-  transition: all .5s;
   border-radius: 1px;
-  border: 1px solid rgb(233, 183, 1);
+  border: 3px solid transparent;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
   overflow: hidden;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
+}
+
+.cta-button:hover {
+  border: 3px solid  rgb(233, 183, 1);
+  color:rgb(243, 240, 228);
 }
 
 .cta-button::after {
@@ -44,7 +48,7 @@ a{
   width: 300%;
   height: 300%;
   background-color: rgba(255, 252, 232, 0.2); 
-  border-radius: 50%;
+  border-radius: 30%;
   transform: translate(-50%, -50%) scale(0);
   animation: pulsar 1s infinite; 
 }
@@ -62,12 +66,6 @@ a{
       transform: translate(-50%, -50%) scale(0); 
       opacity: 1;
   }
-}
-
-.cta-button:hover {
-  background-color: rgb(201, 138, 2);
-
-  color:rgb(243, 240, 228);
 }
 
 @media (max-width: 768px) {
