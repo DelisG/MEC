@@ -1,4 +1,4 @@
-<div style="display: flex; align-items: center; gap: 15px;">
+<div style="display: flex; align-items: center; gap: 15px; flex-direction: row;">
 
 <img src="logo.png" alt="Logo MEC" style="width: 100px; height: auto;">
 
