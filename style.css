@@ -15,6 +15,15 @@ a {
   background-repeat: no-repeat;  /* Garante que o fundo não se repita */
 }
 
+.light{
+text-decoration: none;
+color: #c0c0c0;
+}
+
+.light hover{
+  text-decoration: none;
+  color: #df9307;
+}
 
 .bgwhite{
   background-color: #fff;
